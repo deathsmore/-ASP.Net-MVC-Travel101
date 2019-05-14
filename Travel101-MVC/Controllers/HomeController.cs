@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Travel101_MVC.Data;
 
 namespace Travel101_MVC.Controllers
 {
@@ -10,6 +11,7 @@ namespace Travel101_MVC.Controllers
     {
         public ActionResult Index()
         {
+            TravelContext _context = new TravelContext();
             return View();
         }
 
